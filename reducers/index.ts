@@ -21,9 +21,10 @@ type AuthState = {
 //   user: undefined
 // };
 
-// export interface AppState {
-//   auth: AuthState;
-// }
+// tslint:disable-next-line:no-empty-interface
+export interface AppState {
+
+}
 
 
 // function authReducer(state: AuthState = initialAuthState, action): AuthState {

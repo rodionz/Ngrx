@@ -15,5 +15,9 @@ export class Login implements Action {
   readonly type = AuthActionTypes.LoginAction;
 }
 
+export class Logout implements Action {
 
-export type AuthActions = Login;
+  readonly type = AuthActionTypes.LogoutAction;
+}
+
+export type AuthActions = Login | Logout;
