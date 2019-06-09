@@ -6,10 +6,39 @@ import {
   MetaReducer
 } from '@ngrx/store';
 import { environment } from '../../environments/environment';
+import {  AuthActionTypes } from './../auth/auth.actions';
+import { User } from '../model/user.model';
+import { AuthActions } from '../auth/auth.actions';
 
-export interface AppState {
 
-}
+// tslint:disable-next-line:interface-over-type-literal
+type AuthState = {
+
+};
+
+// const initialAuthState: AuthState = {
+//   loggedIn: false,
+//   user: undefined
+// };
+
+// export interface AppState {
+//   auth: AuthState;
+// }
+
+
+// function authReducer(state: AuthState = initialAuthState, action): AuthState {
+//   switch (action.type){
+//     case AuthActionTypes.LoginAction:
+//       return {
+//         loggedIn: true,
+//         user: action.payLoad.user
+//       };
+
+//       default:
+//         return state;
+//   }
+// }
+
 
 export const reducers: ActionReducerMap<AppState> = {
 

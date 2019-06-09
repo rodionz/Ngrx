@@ -9,7 +9,7 @@ export enum AuthActionTypes {
 }
 
 export class Login implements Action {
-  constructor(payLoad: {user:User}){
+  constructor(public payLoad: {user:User}){
 
   }
   readonly type = AuthActionTypes.LoginAction;
